@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addVehicleContext" prefHeight="452.0" prefWidth="601.0" style="-fx-background-color: #CBF9F0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleFormController">
+   <children>
+      <Label layoutX="24.0" layoutY="39.0" prefHeight="26.0" prefWidth="148.0" text="Vehicle Number  :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="90.0" prefHeight="26.0" prefWidth="137.0" text="Vehicle Weight   :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="147.0" prefHeight="26.0" prefWidth="148.0" text="No of Passengers :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtVehicleNumber" layoutX="186.0" layoutY="25.0" prefHeight="31.0" prefWidth="283.0" />
+      <JFXTextField fx:id="txtVehicleWeight" layoutX="186.0" layoutY="80.0" prefHeight="31.0" prefWidth="283.0" />
+      <JFXTextField fx:id="txtNumberOfPassengers" layoutX="186.0" layoutY="134.0" prefHeight="31.0" prefWidth="283.0" />
+      <Label layoutX="24.0" layoutY="213.0" prefHeight="26.0" prefWidth="137.0" text="Vehicle Type      :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbVehicleType" layoutX="186.0" layoutY="201.0" onAction="#getVehicleType" prefHeight="31.0" prefWidth="283.0" />
+      <JFXButton buttonType="RAISED" layoutX="408.0" layoutY="307.0" onAction="#AddVehicle" prefHeight="31.0" prefWidth="159.0" style="-fx-background-color: #8BF57A;" text="Add Vehicle ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+   </children>
+</AnchorPane>

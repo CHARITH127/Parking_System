@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="managementContext" prefHeight="381.0" prefWidth="840.0" style="-fx-background-color: #F7F2A4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagementFormController">
+   <children>
+      <AnchorPane prefHeight="477.0" prefWidth="227.0" style="-fx-background-color: #D5DBDB;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="28.0" layoutY="78.0" onAction="#InparkingWindow" prefHeight="31.0" prefWidth="179.0" style="-fx-background-color: #DDF7A4;" text="In Parking">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="28.0" layoutY="131.0" onAction="#GotToOnDeliverINterface" prefHeight="31.0" prefWidth="179.0" style="-fx-background-color: #DDF7A4;" text="In Dilivered" />
+            <JFXButton buttonType="RAISED" layoutX="28.0" layoutY="179.0" onAction="#gotoAddVehicle" prefHeight="31.0" prefWidth="179.0" style="-fx-background-color: #DDF7A4;" text="Add Vehicle" />
+            <JFXButton buttonType="RAISED" layoutX="28.0" layoutY="223.0" onAction="#gotoAddDriver" prefHeight="31.0" prefWidth="179.0" style="-fx-background-color: #DDF7A4;" text="Add Driver" />
+            <JFXButton layoutX="22.0" layoutY="423.0" onAction="#logOut" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: #F74843;" text="Log Out" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="227.0" layoutY="11.0" prefHeight="0.0" prefWidth="601.0" />
+      <AnchorPane fx:id="boarderContext" layoutX="227.0" layoutY="14.0" prefHeight="452.0" prefWidth="601.0">
+         <children>
+            <ImageView fitHeight="425.0" fitWidth="571.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../assests/Cost-Effective-and-User-Friendly-car-parking-system-in-Hospitals.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

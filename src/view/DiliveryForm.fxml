@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="diveryWindowContext" prefHeight="452.0" prefWidth="601.0" style="-fx-background-color: #CBF9F0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DiliveryFormController">
+   <children>
+      <TableView fx:id="tblDilivery" layoutX="40.0" layoutY="127.0" prefHeight="259.0" prefWidth="522.0" style="-fx-background-color: #EBF2F1;">
+        <columns>
+          <TableColumn fx:id="colVehicleNo" prefWidth="131.0" text="Vehicle Number" />
+          <TableColumn fx:id="colVehicleType" prefWidth="115.0" text="Vehicle Type" />
+            <TableColumn fx:id="colDriverName" prefWidth="130.0" text="Driver Name" />
+            <TableColumn fx:id="colLeftTime" prefWidth="145.0" text="Left Time'" />
+        </columns>
+      </TableView>
+      <Label layoutX="173.0" layoutY="24.0" text="Delivery Table">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Separator layoutX="52.0" layoutY="86.0" prefHeight="0.0" prefWidth="497.0" />
+   </children>
+</AnchorPane>

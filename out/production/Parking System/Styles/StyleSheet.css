@@ -1,0 +1,53 @@
+#btnCacel{
+    -fx-background-color: red;
+}
+
+#btnParkVehicle{
+    -fx-background-color:aqua;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(one-pass-box,silver , 10, 1.0, 10, 10);
+}
+
+#btnParkVehicle:hover{
+    -fx-background-color: white;
+    -fx-border-radius: 20;
+    -fx-border-color: blue;
+}
+
+#btnDiliveryShift{
+    -fx-background-color:aqua;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(one-pass-box,silver , 10, 1.0, 10, 10);
+}
+#btnManagement{
+    -fx-background-color:blueviolet;
+    -fx-background-radius: 20;
+
+}
+
+/*---------------------------------------------------------------------------*/
+
+#btnManagement:hover{
+    -fx-background-color:white;
+    -fx-border-radius: 20;
+    -fx-effect: dropshadow(one-pass-box,silver , 10, 1.0, 10, 10);
+    -fx-text-fill: aqua;
+    -fx-border-color: blue;
+}
+#btnManagement:pressed{
+    -fx-background-color:silver;
+}
+
+#vBox{
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-border-color: black;
+    -fx-background-color: white;
+}
+
+#lblParkingSlot{
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-border-color: black;
+    -fx-background-color: white;
+}

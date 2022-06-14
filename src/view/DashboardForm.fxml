@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashboardContext" prefHeight="540.0" prefWidth="780.0" style="-fx-background-color: D8F7EB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="29.0" layoutY="45.0" prefHeight="26.0" prefWidth="149.0" text="Select Vehicle">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="29.0" layoutY="118.0" prefHeight="26.0" prefWidth="149.0" text="Vehicle Type  ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="29.0" layoutY="198.0" prefHeight="26.0" prefWidth="149.0" text="Driver ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbvehicleId" layoutX="187.0" layoutY="43.0" onAction="#getValue" prefWidth="150.0" />
+      <ComboBox fx:id="cmbDriver" layoutX="187.0" layoutY="196.0" onAction="#setDriver" prefWidth="150.0" />
+      <JFXButton fx:id="btnParkVehicle" buttonType="RAISED" layoutX="578.0" layoutY="196.0" onAction="#setVehiclePark" prefHeight="31.0" prefWidth="149.0" text="Park Vehicle">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnDiliveryShift" buttonType="RAISED" layoutX="578.0" layoutY="245.0" onAction="#setVehicleOnDelivery" prefHeight="31.0" prefWidth="149.0" text="On Dilivery Shift ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblParkingSlot" alignment="CENTER" layoutX="70.0" layoutY="319.0" prefHeight="115.0" prefWidth="365.0" style="-fx-background-color: #F9EBEB;" text="Label">
+         <font>
+            <Font name="System Bold" size="69.0" />
+         </font></Label>
+      <JFXButton fx:id="btnManagement" buttonType="RAISED" layoutX="492.0" layoutY="361.0" onAction="#goToLoginForm" prefHeight="31.0" prefWidth="232.0" text="Management Log in">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="txtVehicleType" layoutX="187.0" layoutY="116.0" prefHeight="31.0" prefWidth="156.0" style="-fx-background-color: #E5E7E9;" />
+      <Label layoutX="70.0" layoutY="284.0" prefHeight="21.0" prefWidth="267.0" text="This is your slot Number  :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <VBox fx:id="vBox" alignment="TOP_CENTER" layoutX="422.0" layoutY="16.0" prefHeight="141.0" prefWidth="335.0">
+         <children>
+            <Label fx:id="lblDate" alignment="CENTER" prefHeight="47.0" prefWidth="131.0" text="label">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" alignment="CENTER" prefHeight="85.0" prefWidth="302.0" text="Lable">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

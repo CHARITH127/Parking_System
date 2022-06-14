@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="loginFormContext" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="78.0" fitWidth="82.0" layoutX="265.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/profile%20pic.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="75.0" layoutY="129.0" prefWidth="97.0" text="User Name   : " />
+      <Label layoutX="90.0" layoutY="175.0" prefHeight="21.0" prefWidth="78.0" text="Password  :" />
+      <JFXTextField layoutX="181.0" layoutY="118.0" prefHeight="31.0" prefWidth="265.0" />
+      <JFXTextField layoutX="181.0" layoutY="165.0" prefHeight="31.0" prefWidth="265.0" />
+      <JFXButton fx:id="btnCacel" buttonType="RAISED" layoutX="230.0" layoutY="232.0" prefHeight="31.0" prefWidth="87.0" text="Cansel" />
+      <JFXButton buttonType="RAISED" layoutX="349.0" layoutY="232.0" onAction="#goToManagemnt" prefHeight="31.0" prefWidth="97.0" text="Login" />
+   </children>
+</AnchorPane>

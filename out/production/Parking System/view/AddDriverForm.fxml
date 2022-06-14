@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AddDriverContext" prefHeight="452.0" prefWidth="601.0" style="-fx-background-color: #CBF9F0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverFormController">
+   <children>
+      <Label layoutX="71.0" layoutY="40.0" prefHeight="26.0" prefWidth="121.0" text="Driver Name    :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="81.0" prefHeight="26.0" prefWidth="121.0" text="               NIC   :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="127.0" prefHeight="26.0" prefWidth="170.0" text=" Driving License No   :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="174.0" prefHeight="26.0" prefWidth="170.0" text="                  Address   :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="261.0" prefHeight="26.0" prefWidth="170.0" text="              Contact No  :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="473.0" layoutY="328.0" onAction="#AddDriver" style="-fx-background-color: #8BF57A;" text="Add Driver">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <TextField fx:id="txtDriverName" layoutX="207.0" layoutY="38.0" prefHeight="31.0" prefWidth="358.0" style="-fx-background-color: #E5E7E9;" />
+      <TextField fx:id="txtNic" layoutX="207.0" layoutY="79.0" prefHeight="31.0" prefWidth="358.0" style="-fx-background-color: #E5E7E9;" />
+      <TextField fx:id="txtLicenseNumber" layoutX="207.0" layoutY="125.0" prefHeight="31.0" prefWidth="358.0" style="-fx-background-color: #E5E7E9;" />
+      <TextField fx:id="txtContactNumber" layoutX="207.0" layoutY="259.0" prefHeight="31.0" prefWidth="358.0" style="-fx-background-color: #E5E7E9;" />
+      <TextArea fx:id="txtAddress" layoutX="207.0" layoutY="168.0" prefHeight="82.0" prefWidth="358.0" style="-fx-background-color: #E5E7E9;" />
+   </children>
+</AnchorPane>
